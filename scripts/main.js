@@ -48,6 +48,6 @@ setInterval(() => {
     hour.textContent = addZeroFunc(date.getHours());
     min.textContent = addZeroFunc(date.getMinutes());
     sec.textContent = addZeroFunc(date.getSeconds());
-    ampm.textContent = date.getHours() >= 12 ? 'PM' : "AM"
+    ampm.textContent = date.getHours() >= 12 ? 'PM' : "AM";
 }, 1000);
 

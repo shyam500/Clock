@@ -18,11 +18,15 @@ body {
   font-family: var(--main_font);
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  font: normal bolder 2.1rem var(--main_font);
 }
 
 .container {
@@ -55,9 +59,9 @@ main{
   text-align: center;
 }
 
-#ampm{
-    color: rgb(255, 255, 255);
-    font: normal bolder 1.4rem var(--main_font);
+#ampm {
+  color: rgb(255, 255, 255);
+  font: normal bolder 1.4rem var(--main_font);
 }
 
 @media screen and (max-width: 980px) {
@@ -72,5 +76,14 @@ main{
   .time > h1 {
     font: normal bolder 2.6rem var(--main_font);
     text-align: center;
+  }
+  #ampm {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    font: normal bolder 1.3rem var(--main_font);
   }
 }
